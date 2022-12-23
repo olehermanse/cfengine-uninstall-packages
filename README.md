@@ -16,6 +16,13 @@ Different compliance frameworks and security hardening guidelines recommend unin
 Use this module and specify the packages you want uninstalled with module input.
 Compliance frameworks and security hardening guidelines can help you with ideas beyond the list above.
 
+## Module input
+
+Use mission Portal (3.21+), or the `cfbs` command line to specify which packages you want uninstalled as module input.
+In Mission Portal, it looks like this:
+
+![Screenshot of 3 packages to delete: bind, samba, squid](https://raw.githubusercontent.com/olehermanse/cfengine-uninstall-packages/main/uninstall-packages-input.png)
+
 **Hint:** With this module, you don't have to worry about uninstalling the "right" package name according to the platform.
 Just add all the names you want uninstalled, if the package is not found, CFEngine considers it not installed.
 As an example, in RHEL / yum, the Dovecot software is in a package called `dovecot`, while on Ubuntu / apt, the equivalent package name is `dovecot-core`.
