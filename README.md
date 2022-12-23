@@ -1,0 +1,1 @@
+# cfengine-uninstall-packages
